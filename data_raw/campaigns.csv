@@ -1,0 +1,7 @@
+﻿campaign_id,campaign_name,product,dialer_mode,max_attempts,call_window_start,call_window_end,abandon_threshold
+C01,Credit Card Acquisition,Credit Card,Predictive,5,08:00,21:00,0.03
+C02,Personal Loan Cross-sell,Personal Loan,Progressive,5,08:00,21:00,0.03
+C03,Insurance Renewal,Insurance,Preview,5,08:00,21:00,0.03
+C04,Telecom Data Plan Upsell,Telecom,Predictive,5,08:00,21:00,0.03
+C05,Credit Card Reactivation,Credit Card,Progressive,5,08:00,21:00,0.03
+C06,Personal Loan New,Personal Loan,Predictive,5,08:00,21:00,0.03
