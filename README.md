@@ -270,10 +270,7 @@ Each dashboard page tells one story. Below, every page shows its screenshot, the
 │   ├── 06_compliance.sql
 │   └── 07_pbi_support.sql
 ├── powerbi/
-│   └── dialer_dashboard.pbix 
-└── docs/
-    ├── allocation_recommendation.md
-    └── compliance_findings.md
+    └── dialer_dashboard.pbix 
 ```
 
 ---
