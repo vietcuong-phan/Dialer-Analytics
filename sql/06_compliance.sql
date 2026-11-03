@@ -36,10 +36,10 @@ FROM (
     SELECT 'DNC' AS violation_type, COUNT(*) AS calls, COUNT(DISTINCT l.phone_std) AS phones_affected, 1 AS o
     FROM dw.vw_calls AS c JOIN dw.dim_lead AS l ON l.lead_id = c.lead_id WHERE c.flag_dnc_violation = 1
     UNION ALL
-    SELECT 'Ngoai khung 08:00-21:00', COUNT(*), COUNT(DISTINCT l.phone_std), 2
+    SELECT 'Out of time window 08:00-21:00', COUNT(*), COUNT(DISTINCT l.phone_std), 2
     FROM dw.vw_calls AS c JOIN dw.dim_lead AS l ON l.lead_id = c.lead_id WHERE c.flag_out_of_window = 1
     UNION ALL
-    SELECT 'Qua 5 lan goi / SDT', COUNT(*), COUNT(DISTINCT l.phone_std), 3
+    SELECT 'More than 5 times / phone', COUNT(*), COUNT(DISTINCT l.phone_std), 3
     FROM dw.vw_calls AS c JOIN dw.dim_lead AS l ON l.lead_id = c.lead_id WHERE c.flag_over_attempt = 1
 ) AS x
 ORDER BY x.o;
@@ -127,7 +127,7 @@ SELECT campaign_id, COUNT(*) AS over_attempt_calls
 FROM dw.vw_calls WHERE flag_over_attempt = 1 GROUP BY campaign_id ORDER BY campaign_id;
  
 /* 
-   Question 5: ABANDON RATE – Exceeding the 3% Threshold
+   Question 5: Abandon Rate – Exceeding the 3% Threshold
           Measure by DAY and by WEEK: for the same campaign, the two measurement methods may lead to different conclusions.
           Weekly calculation is only valid when there are >= 100 answered calls (exclude the first and last partial weeks of the reporting period).
 */
@@ -242,7 +242,7 @@ ORDER BY CASE risk_level WHEN 'HIGH' THEN 1 WHEN 'WATCH' THEN 2 ELSE 3 END, agen
 GO
  
 -- Question 7: Data Quality Scorecard by Source (based on clean.leads: 83,200 rows)
-SELECT ISNULL(source, 'TONG') AS source,
+SELECT ISNULL(source, 'Overall') AS source,
        COUNT(*) AS leads,
        CAST(100.0 * SUM(CASE WHEN phone_rank > 1 THEN 1 ELSE 0 END) / COUNT(*) AS DECIMAL(5,2)) AS dup_pct,
        CAST(100.0 * SUM(CASE WHEN phone_raw <> phone_std THEN 1 ELSE 0 END) / COUNT(*) AS DECIMAL(5,2)) AS bad_phone_format_pct,

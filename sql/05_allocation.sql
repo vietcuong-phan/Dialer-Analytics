@@ -278,12 +278,12 @@ DROP TABLE IF EXISTS dw.alloc_playbook;
 GO
 
 CREATE TABLE dw.alloc_playbook (
-    segment          CHAR(1)       NOT NULL PRIMARY KEY,
-    priority         TINYINT       NOT NULL,
-    max_attempts     TINYINT       NOT NULL,
-    preferred_window VARCHAR(40)   NOT NULL,
-    dialer_mode_hint VARCHAR(40)   NOT NULL,
-    rationale        VARCHAR(200)  NOT NULL
+    segment CHAR(1) NOT NULL PRIMARY KEY,
+    priority TINYINT NOT NULL,
+    max_attempts TINYINT NOT NULL,
+    preferred_window VARCHAR(100) NOT NULL,
+    dialer_mode_hint VARCHAR(100) NOT NULL,
+    rationale VARCHAR(200) NOT NULL
 );
 INSERT INTO dw.alloc_playbook VALUES
  ('A', 1, 5, '17:00-21:00 first, followed by 14:00-17:00', 'Progressive', 'Highest conversion rate: prioritize peak calling hours and reduce abandonment risk'),

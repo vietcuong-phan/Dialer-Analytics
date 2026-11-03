@@ -197,14 +197,14 @@ CREATE TABLE dw.fact_calls (
     campaign_key         INT           NOT NULL REFERENCES dw.dim_campaign(campaign_key),
     result_key           TINYINT       NOT NULL REFERENCES dw.dim_call_result(result_key),
     call_start           DATETIME2(0)  NOT NULL,
-    attempt_no           TINYINT       NULL,    -- lan goi theo lead_id (nguyen ban)
-    phone_attempt_no     TINYINT       NULL,    -- lan goi theo SO DIEN THOAI (dung de kiem tra gioi han 5 lan)
+    attempt_no           TINYINT       NULL,   
+    phone_attempt_no     TINYINT       NULL,    
     ring_sec             SMALLINT      NULL,
     wait_sec             DECIMAL(6,1)  NULL,
     talk_sec             INT           NULL,
     hold_sec             SMALLINT      NULL,
     wrap_sec             SMALLINT      NULL,
-    handle_sec           INT           NULL,    -- talk+hold+wrap, chi cho cuoc co agent xu ly va talk_sec hop le
+    handle_sec           INT           NULL,
     is_contact           BIT           NOT NULL,
     is_rpc               BIT           NOT NULL,
     is_sale              BIT           NOT NULL,
