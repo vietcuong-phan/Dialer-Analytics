@@ -154,7 +154,7 @@ Each dashboard page tells one story. Below, every page shows its screenshot, the
 
 *Question answered: how is the dialer performing, and which campaign is off-track? Audience: team leaders and operations managers, reviewed each morning.*
 
-![Operations Overview](docs/img/page1_overview.png)
+D:\Charles (Viet Cuong) Phan\DA Portfolio Projects\dialer_analytics\screenshots\01_operations_overview.jpg
 
 **Insights**
 
@@ -177,7 +177,7 @@ Each dashboard page tells one story. Below, every page shows its screenshot, the
 
 *Question answered: which leads deserve capacity, and when should we stop calling? Audience: data-allocation and campaign managers, used during weekly planning.*
 
-![Data Allocation](docs/img/page2_allocation.png)
+D:\Charles (Viet Cuong) Phan\DA Portfolio Projects\dialer_analytics\screenshots\02_data_allocation.jpg
 
 **Insights**
 
@@ -203,7 +203,7 @@ Each dashboard page tells one story. Below, every page shows its screenshot, the
 
 *Question answered: where are we violating rules, and is the cause the system or people? Audience: compliance/QA, operations managers, and IT for configuration fixes; reviewed weekly.*
 
-![Compliance & Data Quality](docs/img/page3_compliance.png)
+D:\Charles (Viet Cuong) Phan\DA Portfolio Projects\dialer_analytics\screenshots\03_compliance_data_quality.jpg
 
 **Insights**
 
@@ -231,7 +231,7 @@ Each dashboard page tells one story. Below, every page shows its screenshot, the
 
 *Question answered: who needs coaching or review, and where is capacity imbalanced? Audience: team leaders, WFM and coaches; reviewed weekly.*
 
-![Agent & Team](docs/img/page4_agents.png)
+D:\Charles (Viet Cuong) Phan\DA Portfolio Projects\dialer_analytics\screenshots\04_agent_team.jpg
 
 **Insights**
 
