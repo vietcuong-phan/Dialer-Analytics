@@ -63,7 +63,7 @@ Raw files: `leads_raw.csv`, `call_log_raw.csv`, `agents.csv`, `campaigns.csv`, `
 
 ### 2.3 Star schema (`dw`)
 
-schema_img
+<img width="1030" height="763" alt="Image" src="https://github.com/user-attachments/assets/e2b696c0-4b91-4615-a4db-4ca40fd78be7" />
 
 | Table | Grain | Key columns |
 |---|---|---|
@@ -154,7 +154,7 @@ Each dashboard page tells one story. Below, every page shows its screenshot, the
 
 *Question answered: how is the dialer performing, and which campaign is off-track? Audience: team leaders and operations managers, reviewed each morning.*
 
-D:\Charles (Viet Cuong) Phan\DA Portfolio Projects\dialer_analytics\screenshots\01_operations_overview.jpg
+<img width="1351" height="766" alt="Image" src="https://github.com/user-attachments/assets/ecb7f2da-7cca-4866-89c5-abca1acb18a8" />
 
 **Insights**
 
@@ -177,7 +177,7 @@ D:\Charles (Viet Cuong) Phan\DA Portfolio Projects\dialer_analytics\screenshots\
 
 *Question answered: which leads deserve capacity, and when should we stop calling? Audience: data-allocation and campaign managers, used during weekly planning.*
 
-D:\Charles (Viet Cuong) Phan\DA Portfolio Projects\dialer_analytics\screenshots\02_data_allocation.jpg
+<img width="1351" height="769" alt="Image" src="https://github.com/user-attachments/assets/59836ac0-f42e-4e8d-b3e9-d71715672014" />
 
 **Insights**
 
@@ -203,7 +203,7 @@ D:\Charles (Viet Cuong) Phan\DA Portfolio Projects\dialer_analytics\screenshots\
 
 *Question answered: where are we violating rules, and is the cause the system or people? Audience: compliance/QA, operations managers, and IT for configuration fixes; reviewed weekly.*
 
-D:\Charles (Viet Cuong) Phan\DA Portfolio Projects\dialer_analytics\screenshots\03_compliance_data_quality.jpg
+<img width="1354" height="769" alt="Image" src="https://github.com/user-attachments/assets/bbe1c105-092e-4857-acca-83dfc6d025d3" />
 
 **Insights**
 
@@ -231,7 +231,7 @@ D:\Charles (Viet Cuong) Phan\DA Portfolio Projects\dialer_analytics\screenshots\
 
 *Question answered: who needs coaching or review, and where is capacity imbalanced? Audience: team leaders, WFM and coaches; reviewed weekly.*
 
-D:\Charles (Viet Cuong) Phan\DA Portfolio Projects\dialer_analytics\screenshots\04_agent_team.jpg
+<img width="1354" height="769" alt="Image" src="https://github.com/user-attachments/assets/00926194-4707-4197-93f3-686e6f80b525" />
 
 **Insights**
 
